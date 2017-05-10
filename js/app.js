@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Relay from 'react-relay';
 import React from 'react';
 
-let userId = getQueryParams(document.location.search).user || "56731a3dfb084e5849ee40fe";
+let userId = getQueryParams(document.location.search).user || "591325d02cf0cd780e21a6a4";
 
 ReactDOM.render(
   <Relay.RootContainer

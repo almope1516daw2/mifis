@@ -15,7 +15,7 @@ var graphQLServer = express();
 graphQLServer.use('/', graphQLHTTP({schema: Schema, pretty: true}));
 graphQLServer.listen(GRAPHQL_PORT, () => {
   console.log(`GraphQL Server is now running on http://localhost:${GRAPHQL_PORT}`);
-  mongoose.connect('mongodb://localhost/test');
+  mongoose.connect('mongodb://localhost:27017/test');
 });
 
 // Serve the Relay app

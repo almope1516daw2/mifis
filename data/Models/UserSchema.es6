@@ -91,3 +91,20 @@ exports.updateAge = ({age, id}) => {
     });
   });
 };
+
+
+exports.addRegister = ({name, surname}) => {
+    var newUser = new User({
+        name: name,
+        surname: surname,
+
+    });
+    console.log(newUser.name);
+    console.log(newUser.surname);
+    console.log(newUser.toString());
+    return new Promise((resolve, reject) => {
+        newUser.save((err, res) => {
+            err ? reject(err) : resolve(res);
+        });
+    });
+};
